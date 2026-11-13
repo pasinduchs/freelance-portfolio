@@ -1,0 +1,251 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070D">
+
+  <script>
+    (function(){
+      try {
+        if(localStorage.getItem('portfolio-theme')==='light'){
+          document.documentElement.dataset.theme='light';
+          const m=document.querySelector('meta[name="theme-color"]');
+          if(m)m.content='#F4F6F8';
+        }
+      } catch {}
+    })();
+  </script>
+
+  <meta name="description" content="About Pasindu Chameera, Civil Engineering undergraduate specialising in architectural drafting, Revit modelling and technical drawing documentation.">
+
+  <title>About Me | Pasindu Chameera</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <a class="brand" href="index.html" aria-label="Pasindu Chameera home">
+      <img src="pc-monogram.png" alt="" class="brand-mark">
+      <span><strong>Pasindu Chameera</strong></span>
+    </a>
+
+    <button class="menu-toggle" type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      aria-label="Open navigation">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+
+      <button class="theme-toggle" type="button"
+        data-theme-toggle
+        aria-label="Switch to light theme"
+        aria-pressed="false">
+
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+        </svg>
+
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path>
+        </svg>
+
+        <span class="theme-toggle-thumb" aria-hidden="true"></span>
+
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+
+    <section class="page-hero page-width about-page-hero">
+      <p class="eyebrow">01 / About Me</p>
+      <h1>About <em>Me</em></h1>
+    </section>
+
+
+    <section class="section section-about">
+
+      <div class="page-width">
+
+        <article class="about-article">
+
+          <div class="about-copy about-copy-intro">
+
+            <p class="body-copy">
+              I focus on architectural drawings and digital models
+              that make a project easier to understand and review.
+              My Civil Engineering studies at the University of
+              Peradeniya provide a technical foundation and shape
+              my interest in accurate, well-presented design.
+            </p>
+
+            <p class="body-copy">
+              My current architectural work includes 2D drawing
+              in AutoCAD and plan-based modelling in Revit.
+              I model walls, doors, windows, stairs and floors,
+              and prepare clear model views and drawing
+              documentation according to the agreed project scope.
+            </p>
+
+            <p class="body-copy">
+              I also explore introductory Python concepts and
+              use Excel to organise information and work with data.
+              For each brief, I value checking the supplied references,
+              communicating clearly, and agreeing on scope and
+              deliverables before work begins.
+            </p>
+
+            <p class="body-copy">
+              My longer-term interests include structural modelling
+              and the wider applications of digital tools across
+              Civil Engineering. I aim to continue broadening my
+              technical understanding while keeping accuracy and
+              clear visual communication central to my work.
+            </p>
+
+          </div>
+
+
+          <figure class="profile-frame">
+            <img src="assets/pasindu-profile.png"
+              alt="Portrait of Pasindu Chameera"
+              loading="lazy">
+          </figure>
+
+
+          <div class="about-copy about-copy-middle">
+
+            <p class="body-copy">
+              During school, I took part in leadership activities,
+              drawing competitions, sports, and other extracurricular
+              events. Participating in a range of activities gave me
+              experience beyond the classroom and helped me develop
+              teamwork, creativity, discipline, and confidence—qualities
+              I continue to value in learning and collaboration.
+            </p>
+
+          </div>
+
+
+          <div class="about-certificate-section">
+
+            <figure class="certificate-frame">
+              <img src="assets/certificate-collection.jpg"
+                alt="Photograph of Pasindu’s school certificates and participation documents"
+                loading="lazy">
+            </figure>
+
+            <div class="about-certificate-copy">
+
+              <h2>Achievements &amp; Certificates</h2>
+
+              <p class="body-copy">
+                This collection reflects my participation in school
+                activities, including leadership, drawing competitions,
+                sports, and other extracurricular events. These
+                experiences helped me develop teamwork, creativity,
+                discipline, and confidence.
+              </p>
+
+              <ul class="certificate-highlights" aria-label="School activities">
+                <li>Leadership &amp; Teamwork</li>
+                <li>Drawing Competitions</li>
+                <li>Sports &amp; Activities</li>
+              </ul>
+
+            </div>
+          </div>
+
+
+          <div class="about-actions">
+            <a class="button button-outline"
+              href="Pasindu_Chameera_CV.pdf"
+              download="Pasindu_Chameera_CV.pdf">
+              Download CV
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- CLEAN FOOTER -->
+  <footer class="site-footer">
+
+    <div class="page-width">
+
+      <div class="footer-main">
+
+        <div>
+
+          <a class="brand footer-brand"
+            href="index.html"
+            aria-label="Pasindu Chameera home">
+
+            <img src="pc-monogram.png" alt="" class="brand-mark">
+            <span><strong>Pasindu Chameera</strong></span>
+
+          </a>
+
+          <p class="footer-description">
+            Architectural drafting, Revit modelling and
+            technical drawing documentation.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="year"></span> Pasindu Chameera
+        </p>
+
+        <p>
+          Civil Engineering · Revit · Architectural Design
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

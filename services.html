@@ -1,0 +1,197 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070D">
+  <script>
+    (function(){
+      try {
+        if(localStorage.getItem('portfolio-theme')==='light'){
+          document.documentElement.dataset.theme='light';
+          const m=document.querySelector('meta[name="theme-color"]');
+          if(m)m.content='#F4F6F8';
+        }
+      } catch {}
+    })();
+  </script>
+  <meta name="description" content="Revit architectural modelling, dimensioned drawings, Excel schedules, measurement tables, and 3D views by Pasindu Chameera.">
+  <title>Architectural Services | Pasindu Chameera</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pasindu Chameera home">
+      <img src="pc-monogram.png" alt="" class="brand-mark">
+      <span><strong>Pasindu Chameera</strong></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html" aria-current="page">Services</a>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+        </svg>
+
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path>
+        </svg>
+
+        <span class="theme-toggle-thumb" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-width services-hero">
+      <p class="eyebrow">03 / Services</p>
+      <h1>Architectural Modelling &amp; <em>Drawing Services</em></h1>
+      <p class="page-lead">
+        From Revit models and dimensioned sheets to Excel schedules and 3D views, I prepare clear project deliverables from the plans and references you provide.
+      </p>
+    </section>
+
+    <section class="section services-section">
+      <div class="page-width">
+
+        <div class="services-heading">
+          <div>
+            <p class="eyebrow">Project support</p>
+            <h2>How I Can <em>Help</em></h2>
+          </div>
+
+          <p class="section-intro">
+            Choose the modelling, drawing, schedule, and visual outputs that fit your project brief.
+          </p>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+            <span class="service-index">01</span>
+            <h3>Revit Architectural Modelling</h3>
+            <p>
+              Create residential architectural 3D models in Revit from your floor plans, sketches, or drawings, using applicable walls, doors, windows, floors, and stairs.
+            </p>
+            <div class="service-deliverable">
+              <span>Deliverables</span>
+              <p>Revit architectural model with relevant model views.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">02</span>
+            <h3>Dimensioned Architectural Drawings</h3>
+            <p>
+              Prepare Revit drawing sheets with applicable floor plans, elevations, and sections, including dimensions, measurements, and drawing annotations.
+            </p>
+            <div class="service-deliverable">
+              <span>Deliverables</span>
+              <p>Dimensioned drawing sheets and PDF exports where appropriate.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">03</span>
+            <h3>Excel Schedules &amp; Measurement Tables</h3>
+            <p>
+              Organise available project or model information into door and window schedules, room measurements, and relevant quantity or measurement tables.
+            </p>
+            <div class="service-deliverable">
+              <span>Deliverables</span>
+              <p>Excel schedules and tables based on information available to calculate accurately.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="service-index">04</span>
+            <h3>3D Views &amp; Image Exports</h3>
+            <p>
+              Prepare basic architectural 3D views from the Revit model and export images suitable for presenting the building design.
+            </p>
+            <div class="service-deliverable">
+              <span>Deliverables</span>
+              <p>Revit 3D views and image exports for design presentation.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <section class="service-outputs" aria-labelledby="service-outputs-title">
+          <div class="service-outputs-heading">
+            <p class="eyebrow">Project deliverables</p>
+            <h2 id="service-outputs-title">What You’ll <em>Receive</em></h2>
+          </div>
+
+          <ul class="service-output-grid">
+            <li>Revit architectural model</li>
+            <li>Dimensioned drawing sheets</li>
+            <li>PDF drawings</li>
+            <li>Excel schedules and tables</li>
+            <li>3D architectural views</li>
+          </ul>
+        </section>
+
+      </div>
+    </section>
+
+    <section class="scope-band">
+      <div class="page-width scope-inner">
+        <p class="eyebrow">Project scope</p>
+        <p>
+          Schedules and measurement tables are prepared from the available drawings or model information. Quantities and calculations are included only where the supplied information supports them accurately.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width">
+      <div class="footer-main">
+        <div>
+          <a class="brand footer-brand" href="index.html" aria-label="Pasindu Chameera home">
+            <img src="pc-monogram.png" alt="" class="brand-mark">
+            <span><strong>Pasindu Chameera</strong></span>
+          </a>
+
+          <p class="footer-description">
+            Architectural drafting, digital modelling, 3D views and drawing documentation.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Pasindu Chameera</p>
+        <p>Civil Engineering · Technology · Design</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
